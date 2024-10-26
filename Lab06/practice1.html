@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+            background-color: b;
+        }
+
+        h1,h2 {
+            color: slategrey;
+            text-align: center;
+            border-bottom: 3px solid steelblue;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            color: slategrey;
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .profile {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            align-items: start;
+        }
+
+        .pfp {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3498db;
+        }
+
+        .contact {
+            flex-grow: 1;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 100px;
+            color: steelblue;
+        }
+
+        .education {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            justify-items: center;
+        }
+
+        .section-title {
+            color: #3498db;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-items: center;
+        }
+
+        ul li {
+            position: relative;
+            padding: 0.5rem 0.5rem 0.5rem 2rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Abdulaziz's Portfolio</h1>
+
+    <div class="profile">
+        <img src="./assets/pfp.jpeg" alt="Protfolio picture" class="pfp">
+        
+        <div class="contact">
+            <div class="item">
+                <span class="label">Name:</span>
+                <span>Abdulaziz Ali</span>
+            </div>
+            <div class="item">
+                <span class="label">Email:</span>
+                <span>abdulaziz.ali@ku.edu</span>
+            </div>
+            <div class="item">
+                <span class="label">Phone:</span>
+                <span>(555) 555-5555</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="education">
+        <div class="section-title">Current Education</div>
+        <p><strong>University:</strong> University of Kansas</p>
+        <p><strong>Degree:</strong>Bachlors of Science in Computer Science</p>
+        <p><strong>Expected Graduation:</strong> July 2026</p>
+        <p><strong>Current GPA:</strong> 3.95</p>
+        <p><strong>Relevant Coursework:</strong></p>
+        <ul>
+            <li>Programming 1&2</li>
+            <li> Software Development</li>
+            <li>Linear Algebra</li>
+            <li>Embedded Systems</li>
+        </ul>
+    </div>
+</body>
+</html>

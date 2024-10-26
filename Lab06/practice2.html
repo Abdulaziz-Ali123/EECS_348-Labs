@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice2</title>
+
+    <style>
+        #content{
+        border-style: solid;
+        border-width: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        This paragraph will be altered.
+    </div>
+    
+    Border R(0-255): <input type="text" id="b_R" value=""> <br>
+    Border G(0-255): <input type="text" id="b_G" value=""> <br>
+    Border B(0-255): <input type="text" id="b_B" value=""> <br>
+    Border Width: <input type="text" id="b_width" value=""> <br>
+    Background R(0-255): <input type="text" id="bg_R" value=""> <br>
+    Background G(0-255): <input type="text" id="bg_G" value=""> <br>
+    Background B(0-255): <input type="text" id="bg_B" value=""> <br>
+    <button onclick="change_paragraph_style()">Change the color!</button> <br>
+
+    <script>
+        function change_paragraph_style() {
+            var b_R = document.getElementById("b_R").value;
+            var b_G = document.getElementById("b_G").value;
+            var b_B = document.getElementById("b_B").value;
+            var b_width = document.getElementById("b_width").value;
+            var bg_R = document.getElementById("bg_R").value;
+            var bg_G = document.getElementById("bg_G").value;
+            var bg_B = document.getElementById("bg_B").value;
+
+            var tag = document.getElementById("content");
+            tag.style.borderColor = `rgb(${b_R},${b_G},${b_B})`;
+            tag.style.borderWidth = b_width
+            tag.style.backgroundColor = `rgb(${bg_R},${bg_G},${bg_B})`;
+        }
+    </script>
+
+</body>
+</html>
